@@ -1,0 +1,159 @@
+
+body {
+    height: 1180px;
+    font-family: 'Carter One', cursive;
+    background: rgb(3,17,36);
+    background: linear-gradient(19deg, rgba(3,17,36,1) 0%, rgba(37,41,61,1) 28%, rgba(21,78,127,1) 72%);
+    background-repeat: no-repeat;
+}
+
+.formRegister {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgb(242, 242, 242);
+    width: 500px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.datesRegister {
+    padding-top: 20px;
+    color: black;
+}
+
+.titleRegister {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    color: black;
+    font-size: 45px;
+}
+
+.inputRegister {
+    border-radius: 5px;
+    padding-top: 5px;
+    background-color: rgb(188, 188, 188);
+}
+
+
+.formConfirmed {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.inputUserRegister {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 550px;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 186, 96);
+    font-family: 'Carter One', cursive;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.pUserRegister {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-family: 'Carter One', cursive;
+    font-size: 65px;
+    color: black;
+}
+
+.pUserRegister1 {
+    margin: 0 auto;
+    margin-top: 125px;
+    font-family: 'Carter One', cursive;
+}
+
+.pUserRegister2 {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Carter One', cursive;
+    color: black;
+}
+
+.btnInfo {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.btnInfo:hover {
+    background-color: rgb(252, 143, 0);
+
+}
+
+.pRegister {
+    margin: 0 auto;
+}
+
+.pRegister a:hover {
+    background-color: white;
+    border-radius: 10px;
+    width: 55px;
+}
+
+.btnEmailCon {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 300px;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 186, 96);
+    font-family: 'Carter One', cursive;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.btnEmailCon:hover {
+    background-color: rgb(255, 186, 96);
+    color: black;
+}
+
+
+.divEmailCon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+
+}
+
+.divEmailCon h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.ImgLogoFilm{
+    height: 150px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.ImgLogoFilm2{
+width: 300px;
+margin: 0 auto;
+}
+
+.ImgLogoFilm3{
+    width: 300px;
+    margin: 0 auto;
+}

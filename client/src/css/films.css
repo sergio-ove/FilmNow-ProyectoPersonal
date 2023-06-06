@@ -1,0 +1,303 @@
+
+
+.divTotalfilm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 1810px;
+    margin-top: 50px;
+    margin-left: 110px;
+
+
+}
+
+.imgFilm {
+    cursor: pointer;
+    border: solid;
+    width: 300px;
+    max-height: 390px;
+}
+
+.imgFilm:hover {
+    filter: grayscale(80%);
+}
+
+.pTitleFilm {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: black;
+}
+
+.tiFilmRo {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.pTime {
+    margin-top: 15px;
+    color: black;
+}
+
+.pPunt {
+    color: black;
+}
+
+.butFilmFun {
+
+    text-align: center;
+    padding: 5px;
+    font-family: 'Carter One', cursive;
+}
+
+.boxFilm p {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Carter One', cursive;
+}
+
+.btnFav {
+    padding: 5px;
+    background-color: rgb(10, 10, 10);
+    cursor: pointer;
+    border-radius: 140px;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    width: 200px;
+    margin: 0 auto;
+    height: 100px;
+    border: 0;
+    margin-top: 20px;
+}
+
+
+.btnFav:hover {
+    background-color: rgb(118, 110, 108);
+}
+
+.divReturn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border: 0;
+}
+
+.butReturn {
+    font-family: 'Carter One', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 700px;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    border: 0;
+}
+
+.butReturn:hover {
+    background-color: rgb(118, 110, 108);
+    color: black;
+
+}
+
+.butReturnStart {
+    font-family: 'Carter One', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 700px;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    border: 0;
+}
+
+.butReturnStart:hover {
+    background-color: rgb(118, 110, 108);
+    color: black;
+}
+
+.divFilmsFavo {
+    display: flex;
+    flex-direction: column;
+}
+
+.pNameFilm {
+    margin-top: 10px;
+    border: solid 1px;
+    background-color: #1A2A47;
+    color: white;
+    box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Carter One', cursive;
+}
+
+
+.divTrailersYou {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.boxFilm {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+    width: 800px;
+    max-height: 400px;
+}
+
+.iframes {
+    align-items: center;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+
+
+.pNoResults {
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.divNoResults {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos para las peliculas mas vistas*/
+
+.divPagPrin {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divScrapFilms {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: x-large;
+
+}
+
+.divScrapFilms div {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(157, 161, 164, 0.43);
+    padding: 40px;
+    width: 1940px;
+    opacity: 0.9;
+
+}
+
+.divScrapFilms .imgCard {
+    height: 380px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: solid;
+    margin-top: 23px;
+}
+
+
+
+.formRegister2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    background-color: rgb(242, 242, 242);
+    width: 1400px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+.h2Scrap {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.inputLoginSearch {
+    height: 60px;
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: white;
+    border: solid 3px;
+    font-family: 'Carter One', cursive;
+    color: #355776;
+    width: 200px;
+}
+
+.infoCardScrap {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.pTtiScrap {
+    font-size: 35px;
+    color: rgb(5, 5, 5);
+}
+
+.pSinScrap {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.pPltScrap {
+    font-size: 20px;
+    color: black;
+    background-color: #f5c518;
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    z-index: -1;
+    border: solid;
+}
+
+.infoCardScrap img {
+    height: 100px;
+}
+
+.divInfoFilms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.divFilms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(157, 161, 164, 0.43);
+    opacity: 0.8;
+}
+
+.butNav{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Carter One', cursive;
+    width: 200px;
+    margin: 5px;
+}
+
+.butNav:hover {
+    background-color:  rgb(118, 110, 108);
+    color: black;
+    border: 0;
+  }

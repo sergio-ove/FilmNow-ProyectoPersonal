@@ -1,0 +1,101 @@
+.slider {
+    padding-top: 5px;
+    display: flex;
+    cursor: grab;
+    border-radius: 20px;
+    width: 2200px;
+}
+
+.slider-container {
+    margin: 0 auto;
+    overflow-x: hidden;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.boxEventAll {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+
+}
+
+.imageCarrusel img {
+    pointer-events: none;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.imageCarrusel {
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.boxEventAll .imgEventAll {
+    height: 400px;
+    height: 300px;
+    border-radius: 2px;
+}
+
+
+.boxEventAll p {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding-left: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.pTitleEvent {
+    text-align: center;
+    font-size: 40px;
+}
+
+.d-block {
+    width: 100px;
+}
+
+.divImageCarrusel {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 50px;
+
+}
+
+.divImageCarrusel img {
+    opacity: 0.6;
+}
+
+.divCarDiv {
+    background: rgb(3,17,36);
+background: linear-gradient(19deg, rgba(3,17,36,1) 0%, rgba(37,41,61,1) 28%, rgba(21,78,127,1) 72%);
+
+}
+
+
+.divFooter {
+    margin-top: 35px;
+}
+
+.imgTop img {
+    border-radius: 50px;
+}
+
+.d-block {
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon::after {
+    content: none !important;
+}
+
+.carousel-control-next-icon::after {
+    content: none !important;
+}
+
