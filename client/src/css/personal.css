@@ -63,6 +63,7 @@
     padding: 20px;
     background-color: rgb(242, 242, 242);
     border-radius: 10px;
+    
 }
 
 
@@ -71,11 +72,13 @@
     color:  black;
     padding: 15px;
     border: solid;
+    margin: 0 auto;
     margin-top: 50px;
-    width: 1460px;
+    width: 1580px;
     font-family: 'Carter One', cursive;
     cursor: pointer;
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+    list-style: none;
 }
 
 .butReStart:hover{
@@ -140,4 +143,14 @@
 h4{
     font-family: 'Carter One', cursive;
  
+}
+
+
+.divSesionNav{
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: black;
 }

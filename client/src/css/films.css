@@ -3,13 +3,11 @@
 .divTotalfilm {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    width: 1810px;
+   
     margin-top: 50px;
-    margin-left: 110px;
-
-
+  
 }
 
 .imgFilm {

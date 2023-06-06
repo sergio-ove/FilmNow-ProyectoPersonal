@@ -2,7 +2,7 @@ import React from 'react'
 
 export const DeleteUser = () => {
 
-    const datesPersonal = JSON.parse(localStorage.getItem("correoRegistrado"))
+    const datesPersonal = JSON.parse(localStorage.getItem("usuarioLogado"))
 
     const deleteDates = async e => {
 

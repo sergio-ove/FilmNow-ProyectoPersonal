@@ -10,8 +10,7 @@ import { Register } from '../Home/Register'
 import { RegisterConfirmed } from '../Home/RegisterConfirmed'
 import { Scrap } from '../Home/Scrap'
 import { StartSearch } from '../Home/StartSearch'
-import { FilmsFavourites } from '../Home/FilmsFavourites'
-import { ModifyUser } from '../Home/ModifyUser'
+
 
 
 export const Rutas = () => {

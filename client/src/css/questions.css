@@ -21,7 +21,7 @@
 }
 
 .divQuestions .buttonQuestion:hover {
-  background-color:  rgb(118, 110, 108);
+  background-color: rgb(118, 110, 108);
   color: black;
   border: 0;
 }
@@ -56,22 +56,21 @@
 
 .butStart {
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
   margin-top: 50px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgb(23, 22, 19);
-  background-color: rgb(255, 186, 96);
+  color: white;
+  background-color: #1A2A47;
   cursor: pointer;
-  height: 90px;
   font-family: 'Carter One', cursive;
   border: solid 3px;
-
+  list-style: none;
 }
 
 .butStart:hover {
-  background-color: black;
-  color: rgb(255, 186, 96);
+  color: white;
+  background-color: rgb(118, 110, 108);
 
 }
 
@@ -92,7 +91,7 @@
 }
 
 .butSave:hover {
-  background-color:  rgb(118, 110, 108);
+  background-color: rgb(118, 110, 108);
   color: black;
 }
 
@@ -174,7 +173,7 @@
 
 .divOpciones {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -182,7 +181,7 @@
   margin-left: 100px;
 }
 
-.h1LoginQ{
+.h1LoginQ {
   margin: 0 auto;
   width: 500px;
   text-align: center;

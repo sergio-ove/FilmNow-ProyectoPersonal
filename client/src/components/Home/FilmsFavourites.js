@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 export const FilmsFavourites = () => {
 
     const [films, setFilms] = useState([])
-    const datesPersonal = JSON.parse(localStorage.getItem('correoRegistrado'))
+    const datesPersonal = JSON.parse(localStorage.getItem('usuarioLogado'))
     const userEmail = datesPersonal.email
 
 

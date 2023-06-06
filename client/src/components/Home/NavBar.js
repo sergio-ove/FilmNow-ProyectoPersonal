@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import filmNomNav from '../../image/filmnowNav.png'
+import { NavLink } from "react-router-dom";
 import {
   MDBContainer,
   MDBNavbar,
@@ -11,7 +12,6 @@ import {
   MDBIcon,
   MDBCollapse,
   MDBInputGroup,
-  MDBBtn
 } from 'mdb-react-ui-kit';
 
 export default function NavBar() {
@@ -19,6 +19,8 @@ export default function NavBar() {
   const [showNavSecond, setShowNavSecond] = useState(false);
 
   const [dates, setDates] = useState(false);
+
+  const datesLocal = JSON.parse(localStorage.getItem('usuarioLogado'))
 
   const scraping = async e => {
 
@@ -74,6 +76,14 @@ export default function NavBar() {
             <MDBNavbarLink href='/home/register'>Registro</MDBNavbarLink>
             <MDBNavbarLink href='/home'>Login</MDBNavbarLink>
             <MDBNavbarLink href='/home/search'>Buscador por pelicula</MDBNavbarLink>
+            <div className='divSesionNav'>
+            {datesLocal ? datesLocal.map((emailUser) => (
+              <div key={emailUser.id_user}>
+            <MDBNavbarLink><p className='pNav'>Sesion inicidad con: {emailUser.email}</p> </MDBNavbarLink>
+            </div>
+            )):""}
+            {datesLocal && <li onClick={()=> localStorage.removeItem("usuarioLogado")}><NavLink to="/">Cerrar sesión</NavLink></li>} 
+            </div>
           </MDBNavbarNav>
         </MDBCollapse>
         <MDBInputGroup tag="form" className='d-flex w-auto mb-3'>

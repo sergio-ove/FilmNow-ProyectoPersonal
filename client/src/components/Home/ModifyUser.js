@@ -2,10 +2,8 @@ import React from 'react'
 
 export const ModifyUser = () => {
 
-    const datesPersonal = JSON.parse(localStorage.getItem("correoRegistrado"))
-    const userEmail = datesPersonal.email
-    const userName = datesPersonal.usuario
-    const userYear = datesPersonal.year
+    const datesPersonal = JSON.parse(localStorage.getItem("usuarioLogado"))
+
 
     //FETCH  PARA MODIFICAR USUARIO
     const updateUser = async e => {
@@ -16,7 +14,7 @@ export const ModifyUser = () => {
             name_user: e.target.usuario.value,
             year_user: e.target.year.value,
             newEmail: e.target.email.value,
-            email: userEmail
+            email: datesPersonal.email
         }
 
         let infoUpdateLocal = {
@@ -53,13 +51,19 @@ export const ModifyUser = () => {
 
                 <form onSubmit={updateUser} className='formPersonal'>
                     <h4>Nombre de usuario:</h4>
-                    <input type="text" defaultValue={userName} name="usuario" />
-                    <h4>Correo electrónico:</h4>
-                    <input type="text" defaultValue={userEmail} name="email" />
-                    <h4>Año de nacimiento:</h4>
-                    <input type="text" defaultValue={userYear} name="year" />
-                    <br />
-                    <input type="submit" className="btnUpdate" defaultValue="Modificar Usuario" />
+
+                    {datesPersonal ? datesPersonal.map((everyUser)=>(
+                        <div key={everyUser.id_user}>
+                        <input type="text" defaultValue={everyUser.name_user} name="usuario" />
+                        <h4>Correo electrónico:</h4>
+                        <input type="text" defaultValue={everyUser.email} name="email" />
+                        <h4>Año de nacimiento:</h4>
+                        <input type="text" defaultValue={everyUser.year_user} name="year" />
+                        </div>
+
+                    )):""}
+                    
+                    <input type="submit" className="btnUpdate" value="Modificar Usuario" />
                 </form>
 
             </div>
