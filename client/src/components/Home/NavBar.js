@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import filmNomNav from '../../image/filmnowNav.png'
 import { NavLink } from "react-router-dom";
@@ -76,6 +75,7 @@ export default function NavBar() {
             <MDBNavbarLink href='/home/register'>Registro</MDBNavbarLink>
             <MDBNavbarLink href='/home'>Login</MDBNavbarLink>
             <MDBNavbarLink href='/home/search'>Buscador por pelicula</MDBNavbarLink>
+            {datesLocal &&  <MDBNavbarLink href='/home/personal'>Área Personal</MDBNavbarLink>} 
             <div className='divSesionNav'>
             {datesLocal ? datesLocal.map((emailUser) => (
               <div key={emailUser.id_user}>

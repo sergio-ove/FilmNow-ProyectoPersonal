@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Footer from './Footer';
 import NavBar from './NavBar';
+import { NavLink } from "react-router-dom";
 
 export const Questions = () => {
 
@@ -70,11 +71,7 @@ export const Questions = () => {
 
     }
 
-    function goToHome() {
-        window.location = '/generate'
-    }
-
-
+   
     // Convertimos el estado del componente en una cadena JSON para poder guardarlo en el Local
     const answersLocal = JSON.stringify(answers);
 
@@ -90,7 +87,7 @@ export const Questions = () => {
             <h1 className='h1LoginQ'>🎥</h1>
 
             {currentQuizQuestion ? currentQuizQuestion.question
-                : <button onClick={() => goToHome()} className="butSave">ENCUENTRA MI PELICULA</button>}
+                : <li className='butSave'><NavLink to="/generate">ENCUENTRA MI PELICULA</NavLink></li>}
             <div className='divOpciones'>
                 {currentQuizQuestion ? currentQuizQuestion.answers.map((answer, i) => (
                     <div key={i}>
@@ -103,6 +100,9 @@ export const Questions = () => {
                 )) : ""}
             </div>
         </div>
+        <div className='divFooter'>
+        <Footer />
+      </div>
        
         </div>
         

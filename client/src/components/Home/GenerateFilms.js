@@ -52,12 +52,12 @@ export const GenerateFilms = () => {
     function save(title) {
         console.log(title)
         
-        const dates = JSON.parse(localStorage.getItem("correoRegistrado") || [])
+        const dates = JSON.parse(localStorage.getItem("usuarioLogado") || [])
         console.log(dates);
 
         let FilmDates = {
             name_film: title,
-            email: dates.email
+            email: dates[0].email
         }
 
         setFilm(FilmDates)

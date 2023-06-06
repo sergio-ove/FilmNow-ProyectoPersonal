@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar';
 import filmNomNav from '../../image/filmnowNav.png'
+import Footer from './Footer';
 
 
 
@@ -84,6 +85,9 @@ export const Register = () => {
         <p className='pRegister'>¿Ya tienes cuenta?<Link to='/home'>Accede</Link></p>
 
       </form>
+      <div className='divFooter'>
+      <Footer/>
+      </div>
     </div>
   )
 }

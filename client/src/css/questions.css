@@ -45,9 +45,11 @@
 .pStart {
   font-size: 25px;
   color: black;
+  font-family: 'Carter One', cursive;
 }
 
 .pStart1 {
+  font-family: 'Carter One', cursive;
   margin: 0 auto;
   font-size: 70px;
   width: 600px;
@@ -78,7 +80,6 @@
   margin: 0 auto;
   margin-top: 50px;
   width: 700px;
-  height: 150px;
   padding: 10px;
   border: solid;
   border-radius: 10px;
@@ -88,6 +89,7 @@
   color: white;
   background-color: black;
   border: 0;
+  list-style: none;
 }
 
 .butSave:hover {

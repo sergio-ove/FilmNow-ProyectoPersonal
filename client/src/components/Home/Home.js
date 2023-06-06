@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import { ClosedSession } from './ClosedSession';
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar';
 import filmnow3 from '../../image/filmnowNav.png'
+import Footer from './Footer';
 
 
 
@@ -57,28 +57,25 @@ export const Home = () => {
 
   return (
 
-
     <div>
       <NavBar />
 
-
       <form className='formRegister' onSubmit={loginUser}>
-        <img src={filmnow3} className="ImgLogoFilm3" alt='logo'/>
+        <img src={filmnow3} className="ImgLogoFilm3" alt='logo' />
         <input className='inputLogin' placeholder='Correo electrónico' type="email" name='email' />
         <input className='inputLogin' placeholder='Contraseña' type="password" name='pass' />
         <input className='inputLogin' type="submit" value="Acceder" />
 
       </form>
 
-
-
       {error && <p className='pInco'>Los datos no son correctos.</p>}
-
-      {!localStorage.getItem("usuarioLogado") && <ClosedSession />}
 
       <p className='pLogin'>¿Aún no estás Registrado?<Link to='/home/register'>Create una cuenta</Link></p>
 
-
+      <div className='divFooter'>
+        <Footer />
+      </div>
     </div>
+
   )
 }

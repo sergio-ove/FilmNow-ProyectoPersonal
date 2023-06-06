@@ -80,7 +80,9 @@ background: linear-gradient(19deg, rgba(3,17,36,1) 0%, rgba(37,41,61,1) 28%, rgb
 
 
 .divFooter {
-    margin-top: 35px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .imgTop img {

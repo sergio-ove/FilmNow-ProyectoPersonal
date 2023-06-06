@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import NavBar from './NavBar';
 import play from '../../image/play.png'
+import Footer from './Footer';
 
 
 
@@ -64,8 +65,8 @@ export const Scrap = () => {
 
                             <p className='pTtiScrap'><i>{peli.tit}</i></p>
                             <p className='pSinScrap'><i>{peli.sin}</i></p>
-                            <p className='pPltScrap'>{peli.plt}<img src={play}/></p>
-                    
+                            <p className='pPltScrap'>{peli.plt}<img src={play} /></p>
+
 
                         </div>
 
@@ -74,6 +75,9 @@ export const Scrap = () => {
 
                 )) : ""}
 
+            </div>
+            <div className='divFooter'>
+                <Footer />
             </div>
 
         </div>

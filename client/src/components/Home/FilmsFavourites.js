@@ -5,7 +5,7 @@ export const FilmsFavourites = () => {
 
     const [films, setFilms] = useState([])
     const datesPersonal = JSON.parse(localStorage.getItem('usuarioLogado'))
-    const userEmail = datesPersonal.email
+    const userEmail = datesPersonal[0].email
 
 
     //FETCH PARA TRAERNOS LAS PELICULAS FAVORITAS DE CADA USUARIO

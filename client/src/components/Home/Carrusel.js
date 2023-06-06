@@ -6,29 +6,14 @@ import terminator from '../../image/terminator.jpg'
 import Footer from './Footer';
 import { MostPopular } from './MostPopular';
 import NavBar from './NavBar';
-
+import { NavLink } from "react-router-dom";
 
 
 
 const Carrusel = () => {
   const [index, setIndex] = useState(0);
-  // const [popular, setPopular] = useState([]);
-  // const token2 = 'k_86200214'
-  // const token6 = 'k_46720ug0'
-  // const token4 = "k_r9znpzwm"
-  // token cuenta lyvegama - lyvegama@gmail.com 12345678
 
-  // useEffect(() => {
-  //   fetch(`https://imdb-api.com/en/API/Top250Movies/${token4}`)
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       setPopular(response.items);
-  //       console.log(response.items)
-  //     })
-
-  // }, [])
-
-  // console.log(popular)
+  const datesLocal = JSON.parse(localStorage.getItem('usuarioLogado'))
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -37,56 +22,58 @@ const Carrusel = () => {
   return (
     <div className='divCarDiv'>
       <NavBar></NavBar>
- 
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          <Carousel.Item>
 
-            <div className='divImageCarrusel' >
-              <img
-                className="d-block w-100"
-                src={terminator}
-                alt="First slide"
-              />
-            
-            </div>
-             
-            <Carousel.Caption>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-        
-           <div className='divImageCarrusel' >
+      {datesLocal ? <li className='butRecomendador'> <NavLink to="/questions">Recomiéndame una película</NavLink></li> : <li className='butRecomendador'><NavLink to="/home">Logueate si quieres acceder al recomendador</NavLink></li>}
+
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item>
+
+          <div className='divImageCarrusel' >
+            <img
+              className="d-block w-100"
+              src={terminator}
+              alt="First slide"
+            />
+
+          </div>
+
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+
+          <div className='divImageCarrusel' >
             <img
               className="d-block w-100"
               src={lewobsky}
               alt="Second slide"
             />
-            </div>
-          
+          </div>
 
-            <Carousel.Caption>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-          
-             <div className='divImageCarrusel' >
+
+          <Carousel.Caption>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+
+          <div className='divImageCarrusel' >
             <img
               className="d-block w-100"
               src={padrino}
               alt="Third slide"
             />
-            </div>
-         
+          </div>
 
-            <Carousel.Caption>
-           
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+
+          <Carousel.Caption>
+
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
 
       <MostPopular></MostPopular>
       <div className='divFooter'>
-      <Footer/>
+        <Footer />
       </div>
     </div>
   );
