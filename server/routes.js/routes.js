@@ -26,10 +26,12 @@ router.post("/register-email",User.registerEmail);
 router.post("/insertFilm",Film.insertFilm);
 //BUSCA PELICULAS POR USUARIO
 router.post("/favorites-films",Film.postFilm);
+//ELIMINA PELICULAS DEL USUARIO
+router.delete("/delete-films",Film.deleteFilm);
+
 
 
 //rutas relacionadas con el scraping:
-
 router.post("/scrap",Scrap.insertScrap);
 
 //exportar router

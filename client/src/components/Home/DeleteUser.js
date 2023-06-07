@@ -25,7 +25,7 @@ export const DeleteUser = () => {
             },
         };
 
-        fetch("http://localhost:5000/delete-user", Metadatos)
+        fetch("http:/localhost:5000/delete-user", Metadatos)
             .then((res) => console.log(res))
             .then((res) => {
 

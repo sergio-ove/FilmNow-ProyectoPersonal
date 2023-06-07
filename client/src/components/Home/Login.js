@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 
 
-export const Home = () => {
+export const Login = () => {
 
   const [error, setError] = useState(false);
 
@@ -70,7 +70,7 @@ export const Home = () => {
 
       {error && <p className='pInco'>Los datos no son correctos.</p>}
 
-      <p className='pLogin'>¿Aún no estás Registrado?<Link to='/home/register'>Create una cuenta</Link></p>
+      <p className='pLogin'>¿Aún no estás Registrado?<Link to='/register'>Create una cuenta</Link></p>
 
       <div className='divFooter'>
         <Footer />

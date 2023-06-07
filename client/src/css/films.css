@@ -121,16 +121,33 @@
 
 .divFilmsFavo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divFilmsFavo input{
+    color: rgba(233, 7, 7, 0.745);
+    background-color: white;
+    border: solid 1px;
+    box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 150px;
+    font-family: 'Carter One', cursive;
+}
+
+.divFilmsFavo input:hover{
+background-color:rgba(233, 7, 7, 0.745);
+color: white;
 }
 
 .pNameFilm {
-    margin-top: 10px;
     border: solid 1px;
     background-color: #1A2A47;
     color: white;
     box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5);
     font-family: 'Carter One', cursive;
+    width: 250px;
+   text-align: center;
 }
 
 

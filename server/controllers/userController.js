@@ -69,7 +69,6 @@ const User = {
 
         const { name_user, newEmail, year_user, email } = req.body;
 
-
         try {
             console.log("entra", req.body)
             const connection = await dbConnection();

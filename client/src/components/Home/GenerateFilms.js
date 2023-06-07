@@ -270,7 +270,7 @@ export const GenerateFilms = () => {
             <div className='divReturn'>
 
                 <button className="butNav"><Link to='/questions'>QUIERO BUSCAR OTRA PELÍCULA</Link></button>
-                <button className="butNav"><Link to='/home/personal'>VOLVER A MI ÁREA PERSONAL</Link></button>
+                <button className="butNav"><Link to='/login/personal'>VOLVER A MI ÁREA PERSONAL</Link></button>
 
             </div>
 

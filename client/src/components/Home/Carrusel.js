@@ -23,7 +23,7 @@ const Carrusel = () => {
     <div className='divCarDiv'>
       <NavBar></NavBar>
 
-      {datesLocal ? <li className='butRecomendador'> <NavLink to="/questions">Recomiéndame una película</NavLink></li> : <li className='butRecomendador'><NavLink to="/home">Logueate si quieres acceder al recomendador</NavLink></li>}
+      {datesLocal ? <li className='butRecomendador'> <NavLink to="/questions">Recomiéndame una película</NavLink></li> : <li className='butRecomendador'><NavLink to="/login">Logueate si quieres acceder al recomendador</NavLink></li>}
 
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>

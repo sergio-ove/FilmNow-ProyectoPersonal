@@ -25,7 +25,7 @@ const Film = {
     postFilm: async (req, res) => {
 
         const { email } = req.body;
-        console.log('el correo es este',email);
+        console.log('el correo es este', email);
 
         try {
             const connection = await dbConnection()
@@ -33,7 +33,7 @@ const Film = {
                 if (err) {
                     console.log('en el error');
                     throw Error
-    
+
                 }
 
                 if (result) {
@@ -51,6 +51,28 @@ const Film = {
         }
 
 
+    },
+
+
+    deleteFilm: async (req, res) => {
+
+        const {film , email } = req.body;
+        console.log(film);
+
+        try {
+            
+            console.log("entra", req.body)
+            const connection = await dbConnection();
+            await connection.query(`DELETE FROM films WHERE email ='${email}' AND name_film ='${film}'`)
+   
+            res.json({ message: "película eliminada" })
+
+        }
+        catch (error) {
+
+            res.status(400)
+            res.send(error.message)
+        }
     },
 
 }

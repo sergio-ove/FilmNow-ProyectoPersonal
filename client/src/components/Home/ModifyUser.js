@@ -53,6 +53,7 @@ export const ModifyUser = () => {
                     <h4>Nombre de usuario:</h4>
 
                     {datesPersonal ? datesPersonal.map((everyUser)=>(
+                        
                         <div key={everyUser.id_user}>
                         <input type="text" defaultValue={everyUser.name_user} name="usuario" />
                         <h4>Correo electrónico:</h4>

@@ -82,7 +82,7 @@ export const Register = () => {
         <br />
         <input type="submit" className="btnInfo" />
         <br />
-        <p className='pRegister'>¿Ya tienes cuenta?<Link to='/home'>Accede</Link></p>
+        <p className='pRegister'>¿Ya tienes cuenta?<Link to='/login'>Accede</Link></p>
 
       </form>
       <div className='divFooter'>

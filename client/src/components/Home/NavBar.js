@@ -72,17 +72,13 @@ export default function NavBar() {
             <MDBNavbarLink active aria-current='page' href='/'>
               Home
             </MDBNavbarLink>
-            <MDBNavbarLink href='/home/register'>Registro</MDBNavbarLink>
-            <MDBNavbarLink href='/home'>Login</MDBNavbarLink>
-            <MDBNavbarLink href='/home/search'>Buscador por pelicula</MDBNavbarLink>
-            {datesLocal &&  <MDBNavbarLink href='/home/personal'>Área Personal</MDBNavbarLink>} 
+            <MDBNavbarLink href='/register'>Registro</MDBNavbarLink>
+            <MDBNavbarLink href='/login'>Login</MDBNavbarLink>
+            <MDBNavbarLink href='/search'>Buscador por pelicula</MDBNavbarLink>
+            {datesLocal &&  <MDBNavbarLink href='/login/personal'>Área Personal</MDBNavbarLink>} 
             <div className='divSesionNav'>
-            {datesLocal ? datesLocal.map((emailUser) => (
-              <div key={emailUser.id_user}>
-            <MDBNavbarLink><p className='pNav'>Sesion inicidad con: {emailUser.email}</p> </MDBNavbarLink>
-            </div>
-            )):""}
-            {datesLocal && <li onClick={()=> localStorage.removeItem("usuarioLogado")}><NavLink to="/">Cerrar sesión</NavLink></li>} 
+            {datesLocal && <p className='pNav'>Sesion inicidad con: {datesLocal[0].email}</p>}
+            {datesLocal && <li className='liClosed' onClick={()=> localStorage.removeItem("usuarioLogado")}><NavLink to="/">Cerrar sesión</NavLink></li>} 
             </div>
           </MDBNavbarNav>
         </MDBCollapse>
