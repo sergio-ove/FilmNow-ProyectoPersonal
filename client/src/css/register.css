@@ -93,7 +93,7 @@ body {
 }
 
 .btnInfo:hover {
-    background-color: rgb(252, 143, 0);
+    background-color: #1A2A47;
 
 }
 
@@ -124,7 +124,7 @@ body {
 
 
 .btnEmailCon:hover {
-    background-color: rgb(255, 186, 96);
+    background-color: #1A2A47;
     color: black;
 }
 

@@ -7,6 +7,8 @@ export const FilmsFavourites = () => {
     const [filmDelete, setFilmDelete] = useState()
     const datesPersonal = JSON.parse(localStorage.getItem('usuarioLogado'))
     const userEmail = datesPersonal[0].email
+    console.log(userEmail);
+
 
 
     //FETCH PARA TRAERNOS LAS PELICULAS FAVORITAS DE CADA USUARIO

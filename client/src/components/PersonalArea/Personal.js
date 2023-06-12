@@ -1,19 +1,15 @@
 import React from 'react'
 import { FilmsFavourites } from './FilmsFavourites'
-import { ModifyUser } from './ModifyUser'
-import { DeleteUser } from './DeleteUser'
 import { NavLink } from "react-router-dom";
-import NavBar from './NavBar'
+import NavBar from '../Layout/NavBar'
+import { DeleteUser } from './DeleteUser';
+import { ModifyUser } from './ModifyUser';
 
 
 export const Personal = () => {
 
-
-
     const datesPersonal = JSON.parse(localStorage.getItem("emailUsuarioLogado"))
     console.log(datesPersonal);
-
-
 
 
     return (

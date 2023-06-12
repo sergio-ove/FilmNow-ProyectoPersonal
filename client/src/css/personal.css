@@ -18,7 +18,7 @@
 
 .perLeft{
     margin: 0 auto;
-    width: 450px;
+    width: 600px;
     min-height: 460px;
     max-height: 460px;
     border: solid;
@@ -54,9 +54,9 @@
 .perRight{
     flex-direction: row;
     margin: 0 auto;
-    width: 450px;
-    min-height: 460px;
-    max-height: 460px;
+    width: 600px;
+    min-height: 450px;
+    max-height: 450px;
     border: solid;
     justify-content: center;
     text-align: center;
@@ -169,4 +169,8 @@ h4{
     flex-direction: column;
     margin-bottom: 10px;
     color: black;
+}
+
+.h1Delete{
+    color: red;
 }

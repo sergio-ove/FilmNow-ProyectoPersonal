@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import NavBar from './NavBar';
 import play from '../../image/play.png'
-import Footer from './Footer';
+import Footer from '../Layout/Footer';
+import NavBar from '../Layout/NavBar';
 
 
 

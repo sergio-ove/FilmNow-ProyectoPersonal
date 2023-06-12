@@ -3,10 +3,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import lewobsky from '../../image/lewobsky.jpg'
 import padrino from '../../image/padrino.jpg'
 import terminator from '../../image/terminator.jpg'
-import Footer from './Footer';
-import { MostPopular } from './MostPopular';
-import NavBar from './NavBar';
+import Footer from '../Layout/Footer';
 import { NavLink } from "react-router-dom";
+import NavBar from '../Layout/NavBar';
+import { MostPopular } from './CarruselTop';
 
 
 

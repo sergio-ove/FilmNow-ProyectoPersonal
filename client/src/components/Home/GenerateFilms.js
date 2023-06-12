@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getRandomInt } from '../../helpers/numberRandoom';
 import { CardFilm } from './CardFilm';
-import NavBar from './NavBar';
+import NavBar from '../Layout/NavBar';
 import { Link } from 'react-router-dom'
 
 

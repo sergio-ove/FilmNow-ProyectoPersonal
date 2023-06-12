@@ -3,13 +3,13 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Carrusel from '../Home/Carrusel'
 import { EmailRegister } from '../Home/EmailRegister'
 import { GenerateFilms } from '../Home/GenerateFilms'
-import { Personal } from '../Home/Personal'
 import { Questions } from '../Home/Questions'
 import { Register } from '../Home/Register'
 import { RegisterConfirmed } from '../Home/RegisterConfirmed'
 import { Scrap } from '../Home/Scrap'
 import { StartSearch } from '../Home/StartSearch'
 import { Login } from '../Home/Login'
+import { Personal } from '../PersonalArea/Personal'
 
 
 

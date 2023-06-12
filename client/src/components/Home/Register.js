@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar';
 import filmNomNav from '../../image/filmnowNav.png'
-import Footer from './Footer';
+import Footer from '../Layout/Footer';
+import NavBar from '../Layout/NavBar';
 
 
 

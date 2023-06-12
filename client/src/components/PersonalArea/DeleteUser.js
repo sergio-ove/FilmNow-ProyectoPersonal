@@ -37,7 +37,7 @@ export const DeleteUser = () => {
     }
   return (
     <div >
-        <h1>Eliminar Cuenta</h1>
+        <h1 className='h1Delete'>Eliminar Cuenta</h1>
          <form onSubmit={deleteDates}>
                 <input type="submit" className="btnDelete" defaultValue={datesPersonal.email} name="email" />
             </form>

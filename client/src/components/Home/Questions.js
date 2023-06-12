@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import Footer from './Footer';
-import NavBar from './NavBar';
 import { NavLink } from "react-router-dom";
+import NavBar from '../Layout/NavBar';
+import Footer from '../Layout/Footer';
 
 export const Questions = () => {
 

@@ -73,7 +73,8 @@ export default function NavBar() {
               Home
             </MDBNavbarLink>
             <MDBNavbarLink href='/register'>Registro</MDBNavbarLink>
-            <MDBNavbarLink href='/login'>Login</MDBNavbarLink>
+            {!datesLocal &&  <MDBNavbarLink href='/login'>Login</MDBNavbarLink>}
+            {/* <MDBNavbarLink href='/login'>Login</MDBNavbarLink> */}
             <MDBNavbarLink href='/search'>Buscador por pelicula</MDBNavbarLink>
             {datesLocal &&  <MDBNavbarLink href='/login/personal'>Área Personal</MDBNavbarLink>} 
             <div className='divSesionNav'>

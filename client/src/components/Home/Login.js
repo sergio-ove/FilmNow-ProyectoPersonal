@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar';
 import filmnow3 from '../../image/filmnowNav.png'
-import Footer from './Footer';
+import NavBar from '../Layout/NavBar';
+import Footer from '../Layout/Footer';
 
 
 
